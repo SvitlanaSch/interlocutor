@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<title>0035516: Відсутність вибраної мови у мобільному додатку Interlocutor AI при вивченні слів. - MantisBT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="https://mantisbt.org/bugs/css/default.css?cache_key=5ddbd846abe9c5a7f4ad097f1016c5ca" />
+	<link rel="stylesheet" type="text/css" href="https://mantisbt.org/bugs/css/status_config.php?cache_key=184cc358db4ad1716e1cdcd824055f1f" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/min/dropzone.min.css"  crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"  crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"  crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans"  crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" integrity="sha256-yMjaV542P+q1RnH6XByCPDfUFhmOafWbeLPmqKh11zo="  crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://mantisbt.org/bugs/css/ace.min.css?cache_key=5ddbd846abe9c5a7f4ad097f1016c5ca" />
+	<link rel="stylesheet" type="text/css" href="https://mantisbt.org/bugs/css/ace-mantis.css?cache_key=5ddbd846abe9c5a7f4ad097f1016c5ca" />
+	<link rel="stylesheet" type="text/css" href="https://mantisbt.org/bugs/css/ace-skins.min.css?cache_key=5ddbd846abe9c5a7f4ad097f1016c5ca" />
+<style>
+* { font-family: "Open Sans"; } 
+h1, h2, h3, h4, h5 { font-family: "Open Sans"; } 
+</style>
+	<link rel="shortcut icon" href="/bugs/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: повнотекстовий пошук" href="https://mantisbt.org/bugs/browser_search_plugin.php?type=text"/>
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: пошук за ідентифікатором проблеми" href="https://mantisbt.org/bugs/browser_search_plugin.php?type=id"/>
+	<script src="/bugs/javascript_config.php?cache_key=184cc358db4ad1716e1cdcd824055f1f"></script>
+	<script src="/bugs/javascript_translations.php?cache_key=ee7d57d6551cc07953e78fde1974788e"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/min/dropzone.min.js" integrity="sha384-TBYvJK9bRa7Ii3OZh+eaXb5r98Ad36+kotsxTD3tIEa9vgJOQ0lRMfZtWAJxPq4P" crossorigin="anonymous"></script>
+	<script src="/bugs/js/common.js"></script>
+	<link rel="canonical" href="https://mantisbt.org/bugs/view.php?id=35516" />
+<link rel="stylesheet" href="/bugs/plugin_file.php?file=MantisCoreFormatting/markdown.css" /><script
+					id="mantis-core-formatting-syntax-highlighting-init"
+					data-cdn="1"
+					data-theme="prism.min.css"
+					data-plugins="copy-to-clipboard,show-language,line-numbers"
+					data-i18n='{"copy-to-clipboard":{"copy":"Copy","copy-success":"\u2713 Copied","copy-error":"Press Ctrl+C to copy"}}'
+					src="/bugs/plugin_file.php?file=MantisCoreFormatting/syntax-highlighting/init.js"></script>
+			<script src="/bugs/plugin_file.php?file=Snippets/jquery-textrange.js"></script>
+			<script src="/bugs/plugin_file.php?file=Snippets/jquery.qtip.min.js"></script>
+			<script src="/bugs/plugin_file.php?file=Snippets/snippets.js"></script>
+			<link rel="stylesheet" type="text/css" href="/bugs/plugin_file.php?file=Snippets/jquery.qtip.min.css"/>
+			<link rel="stylesheet" type="text/css" href="/bugs/plugin_file.php?file=Snippets/snippets.css"/></head>
+<body id="view-issue-page" class="skin-3">
+<div id="navbar" class="navbar navbar-default navbar-collapse navbar-fixed-top noprint"><div id="navbar-container" class="navbar-container"><button id="menu-toggler" type="button" class="navbar-toggle menu-toggler pull-left hidden-lg hidden-md" data-target="#sidebar"><span class="sr-only">Toggle sidebar</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-header"><a href="/bugs//" class="navbar-brand"><span class="smaller-75"> MantisBT </span></a><button type="button" class="navbar-toggle navbar-toggle-img collapsed pull-right hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu"><span class="sr-only">Toggle user menu</span><img class="nav-avatar-40" src="https://secure.gravatar.com/avatar/79155b2d4686df4157b95eb3bf803b27?d=identicon&amp;r=G&amp;s=40" alt="Svitlana Svitlana" /></button></div><div class="navbar-buttons navbar-header navbar-collapse collapse"><ul class="nav ace-nav"><li class="hidden-sm hidden-xs"><div class="btn-group btn-corner padding-right-8 padding-left-8"><a class="btn btn-primary btn-sm" href="bug_report_page.php"><i class="fa fa-edit " ></i> Нова проблема</a></div></li>
+<li class="grey" id="dropdown_projects_menu">
+<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+&#160;mantisbt&#160;
+<i class="fa fa-angle-down ace-icon bigger-110" ></i>
+</a>
+<ul id="projects-list" class=" dropdown-menu dropdown-menu-right dropdown-yellow dropdown-caret dropdown-close">
+<li><div class="projects-searchbox"><input class="search form-control input-md" placeholder="Знайти" /></div></li>
+<li class="divider"></li>
+<li><div class="scrollable-menu">
+<ul class="list dropdown-yellow no-margin">
+<li><a class="project-link" href="/bugs/set_project.php?project_id=0">Всі проєкти</a></li>
+<li class="divider"></li>
+<li class="active"><a class="project-link" href="/bugs/set_project.php?project_id=1">mantisbt</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=20">Mylyn Connector</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=25">Plugin - agileMantis</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=11">Plugin - CsvImport</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=21">Plugin - CustomerManagement</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=10">Plugin - EmailReporting</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=15">Plugin - FilterPageEdit</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=14">Plugin - InlineColumnConfiguration</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=16">Plugin - LinkedCustomFields</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=22">Plugin - MantisTouchRedirect</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=6">Plugin - RecurrCall</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=13">Plugin - RelatedIssuesExport</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=7">Plugin - Reminder</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=8">Plugin - Tasks</a></li>
+<li><a class="project-link" href="/bugs/set_project.php?project_id=18">Plugin - Time Tracking</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li class="grey"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><img class="nav-avatar-40" src="https://secure.gravatar.com/avatar/79155b2d4686df4157b95eb3bf803b27?d=identicon&amp;r=G&amp;s=40" alt="Svitlana Svitlana" /><span class="user-info">Svitlana Svitlana</span><i class="fa fa-angle-down ace-icon" ></i></a><ul class="user-menu dropdown-menu dropdown-menu-right dropdown-yellow dropdown-caret dropdown-close"><li><a href="/bugs/account_page.php"><i class="fa fa-user ace-icon" ></i> Мій запис</a></li><li><a href="https://mantisbt.org/bugs/issues_rss.php?username=Svitlana Svitlana&amp;key=aRxHBGxt-c67Ef3OoksUDSvt0SfyCWeT6nERTyQ1qFLzzLVPoNzCeIjIgNePTF63PMr4xyRT5uPPIQwrjH9l&amp;project_id=1"><i class="fa fa-rss-square orange ace-icon" ></i> RSS</a></li><li class="divider"></li><li><a href="/bugs/logout_page.php"><i class="fa fa-sign-out ace-icon" ></i> Вийти</a></li></ul></li></ul></div></div></div><div class="main-container" id="main-container">
+<div id="sidebar" class="sidebar sidebar-fixed responsive compact "><ul class="nav nav-list"><li>
+<a href="/bugs/my_view_page.php">
+<i class="fa fa-dashboard menu-icon" ></i>
+<span class="menu-text"> Моя сторінка </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li class="active">
+<a href="/bugs/view_all_bug_page.php">
+<i class="fa fa-list-alt menu-icon" ></i>
+<span class="menu-text"> Браузер проблем </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/bugs/bug_report_page.php">
+<i class="fa fa-edit menu-icon" ></i>
+<span class="menu-text"> Нова проблема </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/bugs/changelog_page.php">
+<i class="fa fa-retweet menu-icon" ></i>
+<span class="menu-text"> Хронологія </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/bugs/roadmap_page.php">
+<i class="fa fa-road menu-icon" ></i>
+<span class="menu-text"> Дорожня карта </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/bugs/wiki.php?type=project&amp;id=1">
+<i class="fa fa-book menu-icon" ></i>
+<span class="menu-text"> Вікі </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/bugs/plugin.php?page=Source/index">
+<i class="fa fa-code-fork menu-icon" ></i>
+<span class="menu-text"> Repositories </span>
+</a>
+<b class="arrow"></b>
+</li>
+</ul><div id="sidebar-btn" class="sidebar-toggle sidebar-collapse"><i data-icon2="ace-icon fa fa-angle-double-right" data-icon1="ace-icon fa fa-angle-double-left"
+		class="ace-icon fa fa-angle-double-left"></i></div></div><div class="main-content">
+<div id="breadcrumbs" class="breadcrumbs noprint">
+<ul class="breadcrumb">
+  <li><i class="fa fa-user home-icon active" ></i>  <a href="/bugs/account_page.php">Svitlana Svitlana ( Svitlana Svitlana ) </a>
+  <span class="label hidden-xs label-default arrowed">Репортер</span></li>
+</ul>
+<div class="nav-recent hidden-xs">Недавно відвідані: <a href="/bugs/view.php?id=35516" title="[нова] Відсутність вибраної мови у мобільному додатку Interlocutor AI при вивченні слів.">0035516</a>, <a href="/bugs/view.php?id=35518" title="[нова] Відсутність усного діалогу у мобільному додатку Interlocutor AI (співрозмовник) при спілкуванні.">0035518</a>, <a href="/bugs/view.php?id=35509" title="[нова] Відсутність можливості вибору мови при реєстрації у додатку Interlocutor AI.">0035509</a></div><div id="nav-search" class="nav-search"><form class="form-search" method="post" action="/bugs/jump_to_bug.php"><span class="input-icon"><input type="text" name="bug_id" autocomplete="off" class="nav-search-input" placeholder="Проблема #"><i class="fa fa-search ace-icon nav-search-icon" ></i></span></form></div>
+</div>
+<div class="page-content">
+<div class="row">
+<div class="col-md-12 col-xs-12"><div class="widget-box widget-color-blue2"><div class="widget-header widget-header-small"><h4 class="widget-title lighter"><i class="fa fa-bars ace-icon" ></i>Перегляд деталей проблеми</h4></div><div class="widget-body"><div class="widget-toolbox padding-8 clearfix noprint"><div class="btn-group pull-left"><a class="btn btn-primary btn-white btn-round btn-sm" href="wiki.php?id=35516">Вікі</a><a class="btn btn-primary btn-white btn-round btn-sm" href="#bugnotes">Перейти до коментарів</a><a class="btn btn-primary btn-white btn-round btn-sm" href="#history">Перейти до історії</a></div><div class="btn-group pull-right"><a class="btn btn-primary btn-white btn-round btn-sm" href="view.php?id=35517">&lt;&lt;</a><a class="btn btn-primary btn-white btn-round btn-sm" href="view.php?id=35514">&gt;&gt;</a></div></div><div class="widget-main no-padding"><div class="table-responsive"><table class="table table-bordered table-condensed"><tfoot><tr class="noprint"><td colspan="6"><div class="btn-group"><div class="pull-left padding-right-2"><form method="post" action="bug_monitor_add.php" class="form-inline">
+	<fieldset><input type="hidden" name="bug_monitor_add_token" value="20250227OsV7zjVLvGgZX7r7l99pIHtEFioKSq0F"/>		<input type="hidden" name="bug_id" value="35516" />
+		<input type="submit" class="btn btn-primary btn-sm btn-white btn-round" value="Спостерігати" />
+	</fieldset></form>
+</div><div class="pull-left padding-right-2"><form method="post" action="bug_report_page.php" class="form-inline">
+	<fieldset><input type="hidden" name="bug_report_page_token" value="20250227ncvYcicZ_BVlJvQR0KBBshREk6wqxCkG"/>		<input type="hidden" name="m_id" value="35516" />
+		<input type="submit" class="btn btn-primary btn-sm btn-white btn-round" value="Клонувати" />
+	</fieldset></form>
+</div></div></td></tr></tfoot><tbody><tr class="bug-header"><th class="bug-id category width-15">Код</th><th class="bug-project category width-20">Проєкт</th><th class="bug-category category width-15">Категорія</th><th class="bug-view-status category width-15">Рівень доступу</th><th class="bug-date-submitted category width-15">Зареєстрована</th><th class="bug-last-modified category width-20">Змінена</th></tr><tr class="bug-header-data"><td class="bug-id">0035516</td><td class="bug-project">mantisbt</td><td class="bug-category">attachments</td><td class="bug-view-status">спільна</td><td class="bug-date-submitted">2025-02-27 15:15</td><td class="bug-last-modified">2025-02-27 15:15</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="hidden"></tr><tr><th class="bug-reporter category">Хто повідомив</th><td class="bug-reporter"><a href="https://mantisbt.org/bugs/view_user_page.php?id=54000">Svitlana Svitlana</a>&nbsp;</td><th class="bug-assigned-to category">Кому призначена</th><td class="bug-assigned-to"></td><td colspan="2">&#160;</td></tr><tr><th class="bug-priority category">Пріоритет</th><td class="bug-priority">нормальний</td><th class="bug-severity category">Серйозність</th><td class="bug-severity">значна</td><th class="bug-reproducibility category">Відтворюваність</th><td class="bug-reproducibility">завжди</td></tr><tr><th class="bug-status category">Статус</th><td class="bug-status"><i class="fa fa-square fa-status-box status-10-fg" ></i> нова</td><th class="bug-resolution category">Резолюція</th><td class="bug-resolution">відкрита</td><td colspan="2">&#160;</td></tr><tr><th class="bug-os category">ОС</th><td class="bug-os">Android</td><td colspan="4">&#160;</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="hidden"></tr><tr><th class="bug-summary category">Статистика</th><td class="bug-summary" colspan="5">0035516: Відсутність вибраної мови у мобільному додатку Interlocutor AI при вивченні слів.</td></tr><tr><th class="bug-description category">Опис</th><td class="bug-description" colspan="5"><p>При виборі мови для вивчення слів -English всі слова перекладаються тільки німецькою.</p></td></tr><tr><th class="bug-steps-to-reproduce category">Кроки для відтворення</th><td class="bug-steps-to-reproduce" colspan="5"><ol>
+<li>Зайти у мобільний додаток  Interlocutor AI .</li>
+<li>Вибрати мову для вивчення слів.</li>
+<li>Вибрати розділ &quot;Вивчення слів&quot;.</li>
+<li>Звернути увагу на те що окрім німецької мови немає більше ніякої для вивчення слів.</li>
+</ol></td></tr><tr><th class="bug-additional-information category">Додаткова інформація</th><td class="bug-additional-information" colspan="5"><p>Очікуваний результат: При виборі іноземної мови для вивчення слів всі слова перекладаються вибраною мовою.</p>
+<p>Реальний результат: У мобільному додатку  Interlocutor AI  всі слова перекладаються тільки німецькою мовою.</p></td></tr><tr><th class="bug-tags category">Теги</th><td class="bug-tags" colspan="5">Нема прикріплених тегів.</td></tr><tr class="noprint"><th class="bug-attach-tags category">Прикріплені файли</th><td class="bug-attach-tags" colspan="5"><div class="well well-xs"><a href="file_download.php?file_id=13229&amp;type=bug" target="_self"><i class="fa fa-file-image-o " title="іконка файлу png"></i></a>&#32;<a href="file_download.php?file_id=13229&amp;type=bug" target="_self">Безымянный 1.png</a>&#32;(419,778&#32;байт)<br /></div><div class="well well-xs"><a href="file_download.php?file_id=13230&amp;type=bug" target="_self"><i class="fa fa-file-image-o " title="іконка файлу png"></i></a>&#32;<a href="file_download.php?file_id=13230&amp;type=bug" target="_self">Безымянный 2.png</a>&#32;(457,044&#32;байт)<br /></div></td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="hidden"></tr></tbody></table></div></div></div></div></div>
+<div class="col-md-12 col-xs-12">
+<a id="attachments"></a>
+<a id="bugnotes"></a>
+<div class="space-10"></div>
+
+<div id="bugnotes" class="widget-box widget-color-blue2 ">
+<div class="widget-header widget-header-small">
+	<h4 class="widget-title lighter">
+		<i class="fa fa-comments ace-icon" ></i>		Активність	</h4>
+	<div class="widget-toolbar">
+		<a data-action="collapse" href="#">
+			<i class="fa fa-chevron-up 1 ace-icon bigger-125" ></i>		</a>
+	</div>
+	</div>
+	<div class="widget-body">
+	<div class="widget-main no-padding">
+	<div class="table-responsive">
+	<table class="table table-bordered table-condensed table-striped">
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12 col-xs-12 noprint">
+<a id="addbugnote"></a>
+<div class="space-10"></div>
+
+<form id="bugnoteadd"
+	method="post"
+	action="bugnote_add.php"
+	enctype="multipart/form-data"
+	>
+	<input type="hidden" name="bugnote_add_token" value="20250227Yt_aDnb9Apu3vo9Z103-bOIYYjALaDpU"/>	<input type="hidden" name="bug_id" value="35516" />
+	<div id="bugnote_add" class="widget-box widget-color-blue2 ">
+		<div class="widget-header widget-header-small">
+			<h4 class="widget-title lighter">
+				<i class="fa fa-comment ace-icon" ></i>				Додання коментаря			</h4>
+			<div class="widget-toolbar">
+				<a data-action="collapse" href="#">
+					<i class="fa fa-chevron-up 1 ace-icon bigger-125" ></i>				</a>
+			</div>
+		</div>
+
+		<div class="widget-body">
+		<div class="widget-main no-padding">
+
+		<div class="table-responsive">
+		<table class="table table-bordered table-condensed">
+		<tbody>
+
+			<tr>
+				<th class="category">
+					Рівень доступу				</th>
+				<td>
+				<label for="bugnote_add_view_status">
+					<input type="checkbox" class="ace" id="bugnote_add_view_status" name="private"  />
+					<span class="lbl padding-6">закрита</span>
+				</label>
+				</td>
+			</tr>
+
+			<tr>
+				<th class="category width-15">
+					Коментар				</th>
+				<td class="width-85">
+					<textarea name="bugnote_text" id="bugnote_text" class="form-control" rows="7"></textarea>
+				</td>
+			</tr>
+
+			<tr id="bugnote-attach-files">
+				<th class="category">
+					Завантажити файли					<br />
+					<span class="small" title="Максимальний розмір: 2,097,152 байт">Максимальний розмір: 2,048 КиБ</span>				</th>
+				<td>
+						<div id="dropzone-preview-template" class="hidden">
+		<div class="dz-preview dz-file-preview">
+			<div class="dz-filename"><span data-dz-name></span></div>
+			<img data-dz-thumbnail />
+			<div class="dz-error-message">
+				<div class="dz-error-mark"><span><i class="fa fa-times-circle " ></i></span></div>
+				<span data-dz-errormessage></span>
+			</div>
+			<div class="dz-size" data-dz-size></div>
+			<div class="progress progress-small progress-striped active">
+				<div class="progress-bar progress-bar-success" data-dz-uploadprogress></div>
+			</div>
+			<a class="btn btn-primary btn-white btn-round btn-xs" data-dz-remove>
+				Вилучити файл			</a>
+		</div>
+	</div>
+						<input type="hidden" name="max_file_size" value="2097152" />
+					<div class="dropzone center" data-force-fallback="false"
+	data-max-filesize-bytes="2097152"
+	data-max-filename-length="250"
+	data-accepted-files=""
+	data-default-message="Додайте файли перетягнувши їх, виберіть або вставте їх."
+	data-fallback-message="Ваш браузер не підтримує завантаження файлів через просте перетягування."
+	data-fallback-text=""
+	data-file-too-big="Файл надто великий ({{filesize}} МіБ). Максимальний розмір: {{maxFilesize}} МіБ."
+	data-invalid-file-type="Ви не можете вантажити файли цього типу."
+	data-response-error="Сервер відповів кодом {{statusCode}}."
+	data-cancel-upload="Скасувати завантаження"
+	data-cancel-upload-confirmation="Ви впевнені, що хочете скасувати це завантаження?"
+	data-remove-file=""
+	data-remove-file-confirmation=""
+	data-max-files-exceeded="Ви не можете завантажити більше файлів."
+	data-dropzone-not-supported="Dropzone.js не підтримує старіших браузерів!"	data-dropzone_multiple_files_too_big="Максимально допустимий розмір файлів ({{maxFilesize}} MiB) було перевищено для наступних файлів:{{files}}"	data-dropzone_multiple_filenames_too_long="Наступні назви файлів занадто довгі (максимум {{maxFilenameLength}} символів):{{files}}">
+						<i class="fa fa-cloud-upload upload-icon ace-icon blue fa-3x" ></i>						<br>
+						<span class="bigger-150 grey">Додайте файли перетягнувши їх, виберіть або вставте їх.</span>
+						<div id="dropzone-previews-box" class="dz dropzone-previews dz-max-files-reached"></div>
+					</div>
+					<div class="fallback">
+						<input id="ufile[]" name="ufile[]" type="file" size="50" />
+					</div>
+				</td>
+			</tr>
+		</tbody>
+</table>
+</div>
+</div>
+	<div class="widget-toolbox padding-8 clearfix">
+		<input type="submit" class="btn btn-primary btn-white btn-round" value="Додати коментар" />
+	</div>
+</div>
+</div>
+</form>
+</div>
+	<div class="col-md-12 col-xs-12">
+		<a id="history"></a>
+		<div class="space-10"></div>
+		<div id="history" class="widget-box widget-color-blue2 ">
+			<div class="widget-header widget-header-small">
+				<h4 class="widget-title lighter">
+					<i class="fa fa-history ace-icon" ></i>					Хронологія проблеми				</h4>
+				<div class="widget-toolbar">
+					<a data-action="collapse" href="#">
+						<i class="fa fa-chevron-up 1 ace-icon bigger-125" ></i>					</a>
+				</div>
+			</div>
+
+			<div class="widget-body">
+				<div class="widget-main no-padding">
+					<div class="table-responsive">
+	<table class="table table-bordered table-condensed table-hover table-striped">
+		<thead>
+			<tr>
+				<th class="small-caption">
+					Дата				</th>
+				<th class="small-caption">
+					Користувач				</th>
+				<th class="small-caption">
+					Поле				</th>
+				<th class="small-caption">
+					Зміна				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td class="small-caption">
+					2025-02-27 15:15				</td>
+				<td class="small-caption">
+					<a href="https://mantisbt.org/bugs/view_user_page.php?id=54000">Svitlana Svitlana</a>				</td>
+				<td class="small-caption">
+					Нова проблема				</td>
+				<td class="small-caption">
+									</td>
+			</tr>
+			<tr>
+				<td class="small-caption">
+					2025-02-27 15:15				</td>
+				<td class="small-caption">
+					<a href="https://mantisbt.org/bugs/view_user_page.php?id=54000">Svitlana Svitlana</a>				</td>
+				<td class="small-caption">
+					Прикріплено файл: Безымянный 1.png				</td>
+				<td class="small-caption">
+									</td>
+			</tr>
+			<tr>
+				<td class="small-caption">
+					2025-02-27 15:15				</td>
+				<td class="small-caption">
+					<a href="https://mantisbt.org/bugs/view_user_page.php?id=54000">Svitlana Svitlana</a>				</td>
+				<td class="small-caption">
+					Прикріплено файл: Безымянный 2.png				</td>
+				<td class="small-caption">
+									</td>
+			</tr>
+		</tbody>
+	</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="space-20"></div>
+<div class="footer noprint">
+<div class="footer-inner">
+<div class="footer-content">
+<div class="col-md-6 col-xs-12 no-padding">
+<address>
+<strong>Powered by <a href="https://www.mantisbt.org" title="bug tracking software">MantisBT  2.28.0-dev-master-e6dd655b9</a></strong> <br>
+<small>Copyright &copy; 2000 - 2025 MantisBT Team</small><br><small>Зв'яжіться з <a href="mailto:vboctor@mantisbt.org" title="Написати веб-майстру по ел. пошті">адміністратором</a> для отримання допомоги</small><br>
+</address>
+</div>
+<div class="col-md-6 col-xs-12">
+<div class="pull-right" id="powered-by-mantisbt-logo">
+<a href="https://www.mantisbt.org" title="Mantis Bug Tracker: a free and open source web based bug tracking system."><img src="/bugs/images/mantis_logo.png" width="102" height="35" alt="Powered by Mantis Bug Tracker: a free and open source web based bug tracking system." /></a>
+</div>
+</div>
+<div class="col-xs-12 no-padding grey">
+<address class="no-margin pull-right">
+<small><i class="fa fa-clock-o " ></i> Час форматування сторінки: 0.0809 секунд</small>&#160;&#160;&#160;&#160;
+</address>
+</div>
+</div>
+</div>
+</div>
+<a class="btn-scroll-up btn btn-sm btn-inverse display" id="btn-scroll-up" href="#">
+<i class="fa fa-angle-double-up ace-icon icon-only bigger-110" ></i>
+</a>
+</div>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha256-5YmaxAwMjIpMrVlK84Y/+NjCpKnFYa8bWWBbUHSBGfU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.4/typeahead.jquery.min.js" integrity="sha512-+f1CvxhWImXOCzqPaBaXNtH+cyfZYeHaJTPoT1v/CK326MliOFISS+rEEwRwO4atJr1+eXpVRVyaUyjXotFBKg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js" integrity="sha512-93wYgwrIFL+b+P3RvYxi/WUFRXXUDSLCT2JQk9zhVGXuS2mHl2axj6d+R6pP+gcU5isMHRj1u0oYE/mWyt/RjA==" crossorigin="anonymous"></script>
+	<script src="/bugs/js/ace.min.js"></script>
+</body>
+</html>
